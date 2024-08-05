@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin-top: 5px;">Password Generator</h1>
+        <div class="options">
+            <label class="custom-checkbox ">
+                <input type="checkbox" id="lowercase">
+                <span class="checkmark"></span>
+                Include Lowercase
+            </label>
+            <label class="custom-checkbox">
+                <input type="checkbox" id="uppercase">
+                <span class="checkmark"></span>
+                Include Uppercase
+            </label>
+            <label class="custom-checkbox">
+                <input type="checkbox" id="symbols">
+                <span class="checkmark"></span>
+                Include Symbols
+            </label>
+            <label class="custom-checkbox">
+                <input type="checkbox" id="numbers">
+                <span class="checkmark"></span>
+                Include Numbers
+            </label>
+            <div class="passlength">
+                Password Length
+                <input type="number" id="textbox" value="0"><br>
+            </div>
+            
+        </div>
+        <button onclick="blabla()" class="button1">Generate Password</button>
+        <br>
+        <br>
+        
+        <div class="output">
+            <label>Generated password</label>
+            <div class="generatedboxcontainer">
+                <input type="text" id="password_box" class="qwer" readonly>
+                <button class="imgcopybutton" id="imgcopybutton"><div class="copyimg"></div></button>
+                
+            </div>
+        </div>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
